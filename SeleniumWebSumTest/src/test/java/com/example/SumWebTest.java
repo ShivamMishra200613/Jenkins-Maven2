@@ -28,7 +28,7 @@ public class SumWebTest {
 
     @Test
     public void testSum() throws InterruptedException {
-        String url = "file:///C:/ProgramData/Jenkins/.jenkins/workspace/SeleniumWebSumTest/src/test/resources/sum.html";
+        String url = "file:///C:/ProgramData/Jenkins/.jenkins/workspace/JUnitMaven/SeleniumWebSumTest/src/test/resources/sum.html";
         driver.get(url);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
