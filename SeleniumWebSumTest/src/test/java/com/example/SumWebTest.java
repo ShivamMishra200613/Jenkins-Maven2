@@ -28,14 +28,7 @@ public class SumWebTest {
 
     @Test
     public void testSum() throws InterruptedException {
-        File htmlFile = new File("target/test-classes/sum.html");
-if (!htmlFile.exists()) {
-    System.out.println("HTML file not found: " + htmlFile.getAbsolutePath());
-} else {
-    String url = htmlFile.toURI().toString();
-    driver.get(url);
-}
-        
+        String url = "file:///C:/ProgramData/Jenkins/.jenkins/workspace/SeleniumWebSumTest/src/test/resources/sum.html";
         driver.get(url);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
